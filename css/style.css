@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap");
+
 body {
-  max-width: 1024px;
+  max-width: 768px;
   margin: 0 auto;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .titulo {
   color: #ec183f;
-  margin: 23px 0 10px 0;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  font-size: 2rem;
 }
 
 .secao small {
@@ -13,7 +19,6 @@ body {
 }
 
 .secao img {
-  max-width: 1024px;
   width: 100%;
 }
 
@@ -35,10 +40,53 @@ body {
   justify-content: center;
 }
 
-.rede-social {
+.header {
+  display: flex;
+  padding: 23px 20px 10px 20px;
+  align-items: center;
 }
 
+.menu {
+  display: none;
+}
+
+.menu-mobile {
+  display: block;
+}
+
+.menu-mobile img {
+  max-width: 42px;
+  cursor: pointer;
+}
+
+.corpo {
+  padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .menu {
+    display: block;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .corpo {
+    padding: 0;
+  }
+  .header {
+    padding: 0;
+  }
+}
+
+.menu-list {
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
 .rede-social img {
   width: 42px;
 }
+
